@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+html, body{
+	height:100%;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+	z-index:1;
+}
+
+.menu nav{
+	display: flex block;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	flex-grow: 1;
+	position: fixed;
+	margin: 2.5% .5% 0 6%;
+}
+ 
+ 
+.menu a{
+	text-decoration: none;
+	display:block;
+	color: black;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 30px;
+}
+
+.menu a:visited{
+	color: black;
+}
+
+.menu a:hover{
+	color:#F8B4B4;
+	font-style: italic;
+}
+
+
+
+/*SOURCES*/
+
+.sources{
+	display: grid;
+	position: relative;
+	height: auto;
+	grid-template-columns: 1fr 2fr 1fr;
+	margin-top: 5%;
+	grid-template-rows: 3;
+
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8{
+	grid-column: 2/3;
+}
+
+
+.sources a{
+	text-decoration: none;
+	font-family: "Roboto Thin Italic", "Roboto Thin", "Roboto Mono Thin Italic", "Roboto Mono Thin", "Roboto Mono Medium Italic", "Roboto Mono Medium", "Roboto Mono Light Italic", "Roboto Mono Light", "Roboto Mono Bold", "Roboto Mono", "Roboto Mono Bold Italic";
+	color: transparent;
+	font-size: 2vmin;
+	grid-column: 2/3;
+	text-shadow: 0 0 5px #F8B4B4;
+	transition: all .7s;
+	line-height: 50px;
+	text-align: left;
+	
+}
+
+.sources a:hover{
+	color: black;
+	
+}
+
+.sources a:visited{
+	color: black;
+	
+}
+
+.img4{
+	display: grid;
+	justify-content: center;
+	grid-column: 3;
+	grid-row: 4;
+}
+
